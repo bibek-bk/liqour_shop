@@ -1,0 +1,19 @@
+
+Liqour-shop-dashboard
+
+--Home--
+    --sales
+        --total-sales
+        --yearly-monthly-weekly-daily
+       
+    --products
+        --total-products
+        --top-5 high sales
+        --bottom-5 low sales
+        
+    --
+
+
+
+
+    
