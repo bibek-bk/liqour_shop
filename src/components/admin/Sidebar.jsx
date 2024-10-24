@@ -1,12 +1,15 @@
+import SidebarButton from "./SidebarButton"
 
 function Sidebar() {
   return (
-    <div>
-      <ul >
-        <li >Home</li>
-        <li >Products</li>
-        <li >Orders</li>
-      </ul>
+    <div className="h-full">
+      <div>
+        <SidebarButton data={'Home'} />
+        <SidebarButton data={'Products'} />
+        <SidebarButton data={'Orders'} />
+        <SidebarButton data={'Users'} />
+        <SidebarButton data={'Sign Out'} />
+      </div>
     </div>
   )
 }

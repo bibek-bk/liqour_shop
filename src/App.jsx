@@ -1,10 +1,10 @@
-import Dashboard from "./pages/admin/Dashboard"
+import Layout from "./pages/admin/Layout"
 
 function App() {
 
   return (
     <>
-     <Dashboard />
+     <Layout />
     </>
   )
 }

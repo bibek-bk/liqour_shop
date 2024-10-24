@@ -1,16 +1,16 @@
-import Mainbar from "../../components/admin/Mainbar"
 import Header from "../../components/admin/Header"
+import Mainbar from "../../components/admin/Mainbar"
 import Sidebar from "../../components/admin/Sidebar"
 
-function Dashboard() {
+function Layout() {
   return (
     <>
       <Header />
-      <div className="flex mx-2">
-        <div className="w-1/6 border-4">
+      <div className="flex mx-2 h-[90vh]">
+        <div className="w-1/6 border-2">
           <Sidebar />
         </div>
-        <div className="w-5/6 border-4" >
+        <div className="w-5/6 border-2" >
           <Mainbar />
         </div>
       </div>
@@ -18,4 +18,4 @@ function Dashboard() {
   )
 }
 
-export default Dashboard
+export default Layout
