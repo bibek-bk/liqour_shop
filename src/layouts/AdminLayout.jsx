@@ -1,8 +1,8 @@
-import Header from "../../components/admin/Header"
-import Mainbar from "../../components/admin/Mainbar"
-import Sidebar from "../../components/admin/Sidebar"
+import { Outlet } from "react-router-dom"
+import Header from "../components/admin/Header"
+import Sidebar from "../components/admin/Sidebar"
 
-function Layout() {
+function AdminLayout() {
   return (
     <>
       <Header />
@@ -11,11 +11,11 @@ function Layout() {
           <Sidebar />
         </div>
         <div className="w-5/6 border-2" >
-          <Mainbar />
+          <Outlet />
         </div>
       </div>
     </>
   )
 }
 
-export default Layout
+export default AdminLayout
