@@ -6,27 +6,32 @@ import AdminLayout from "../layouts/AdminLayout";
 import Home from "../pages/admin/Home";
 import Orders from "../pages/admin/Orders";
 import Products from "../pages/admin/Products";
+import Users from "../pages/admin/Users";
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <UserLayout />
+    path: "/",
+    element:<UserLayout />
   },
   {
     path: '/admin',
     element: <AdminLayout />,
     children: [
       {
-        path: '/home',
+        path: '',
         element: <Home />
       },
       {
-        path: '/users',
+        path: 'Products',
         element: <Products />
       },
       {
-        path: '/orders',
+        path: 'orders',
         element: <Orders />
+      },
+      {
+        path: 'users',
+        element: <Users />
       }
     ]
   }

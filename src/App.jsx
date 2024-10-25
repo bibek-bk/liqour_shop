@@ -1,12 +1,9 @@
-import Layout from "./pages/admin/Layout"
+import { RouterProvider } from "react-router-dom"
+import router from "./routes/routes"
 
 function App() {
 
-  return (
-    <>
-     <Layout />
-    </>
-  )
+  return <RouterProvider router={router}/>
 }
 
 export default App
